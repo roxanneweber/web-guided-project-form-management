@@ -26,6 +26,7 @@ function SimpleForm() {
 
   const change = (evt) => {
     const {name, value} = evt.target;
+    console.log(name, value)
     setFormValues({ ...formValues, [name]: value});
   }
 
@@ -69,8 +70,8 @@ function SimpleForm() {
 
 render(
   <>
-    <SimpleForm />
-    {/* <App /> */}
+    {/* <SimpleForm /> */}
+    <App />
   </>
   , document.querySelector('#root')
 )
